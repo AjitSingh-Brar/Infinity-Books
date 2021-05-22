@@ -1,4 +1,141 @@
 .search {
+  position: relative;
+  top: 150px;
+  left: 0;
+  right: 0;
   color: black;
-  margin-top: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+  align-items: center;
+}
+
+.search__section {
+  display: flex;
+  flex-direction: column;
+}
+
+.search__section > span {
+  font-size: 40px;
+}
+
+.search__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  right: 60px;
+}
+
+.search__inputSection {
+  width: 500px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.search__inputBox {
+  flex: 1;
+  height: 30px;
+  outline: 0;
+  border: none;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.search__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 44px;
+  color: white;
+  padding: 2px 16px;
+  background-color: #323334;
+  cursor: pointer;
+  transition: 1s;
+}
+.search__button:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 44px;
+  color: white;
+  padding: 2px 16px;
+  background-color: #4c4f53;
+  cursor: pointer;
+}
+
+.search__imageBackground > img {
+  width: 400px;
+  height: 250px;
+}
+
+@media screen and (max-width: 1068px) {
+  .search {
+    color: black;
+    width: 100vw;
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .search__section {
+    margin-bottom: 50px;
+  }
+  .search__section > span {
+    font-size: 25px;
+  }
+  .search__imageBackground > img {
+    width: 600px;
+    height: 300px;
+  }
+
+  .search__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    right: 10px;
+  }
+
+  .search__inputSection {
+    width: 400px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+  }
+
+  .search__inputBox {
+    flex: 1;
+    height: 30px;
+    outline: 0;
+    border: none;
+    padding-left: 20px;
+    font-size: 15px;
+  }
+
+  .search__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 39px;
+    color: white;
+    padding: 2px 16px;
+    background-color: #323334;
+    cursor: pointer;
+  }
 }
