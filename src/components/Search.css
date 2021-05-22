@@ -95,8 +95,8 @@
     font-size: 25px;
   }
   .search__imageBackground > img {
-    width: 600px;
-    height: 300px;
+    width: 100vw;
+    height: 400px;
   }
 
   .search__input {

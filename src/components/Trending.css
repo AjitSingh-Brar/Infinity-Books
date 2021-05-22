@@ -1,6 +1,6 @@
 .trending {
   position: relative;
-  top: 150px;
+  top: 200px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 26px;
@@ -47,7 +47,7 @@
   border-color: rgb(249, 249, 249, 0.8);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1068px) {
   .trending__content {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
