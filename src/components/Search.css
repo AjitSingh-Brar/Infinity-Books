@@ -70,6 +70,7 @@
   padding: 2px 16px;
   background-color: #4c4f53;
   cursor: pointer;
+  z-index: -1;
 }
 
 .search__imageBackground > img {
@@ -87,6 +88,7 @@
     justify-content: center;
     flex-wrap: wrap;
     overflow: hidden;
+    z-index: -1;
   }
   .search__section {
     margin-bottom: 50px;

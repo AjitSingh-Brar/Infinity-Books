@@ -1,0 +1,38 @@
+.book {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 200px;
+  z-index: -1;
+  margin-bottom: 40px;
+}
+.book__wrapContent {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eaecee;
+  padding: 20px;
+  width: 50%;
+  border-radius: 10px;
+  transition: all 250ms ease-in-out 0s;
+
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.book__wrap > img {
+  width: 150px;
+  height: 200px;
+}
+
+.book__wrapInfo {
+  padding: 0 60px;
+}
+
+.book__wrapInfo > h4 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.book__wrapInfo > p {
+  color: rgb(145, 122, 122);
+  line-height: 1.5rem;
+}
