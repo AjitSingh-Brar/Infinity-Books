@@ -6,7 +6,6 @@ import "./Search.css";
 
 const Search = () => {
   const [bookTitle, setBookTitle] = useState("");
-  const booksListing = useSelector(selectBookList);
   const history = useHistory();
 
   const dispatch = useDispatch();
@@ -19,14 +18,18 @@ const Search = () => {
         return response.json();
       })
       .then((data) => {
-        console.log(data.docs);
         dispatch(setBookList(data.docs));
       });
 
     history.push("/searchlist");
   };
-  console.log(booksListing);
-  console.log(bookTitle);
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      searchBooks();
+    }
+  };
+
   return (
     <div className="search">
       <div className="search__section">
@@ -39,6 +42,7 @@ const Search = () => {
               className="search__inputBox"
               value={bookTitle}
               onChange={(e) => setBookTitle(e.target.value)}
+              onKeyDown={handleKeyPress}
             />
           </div>
           <div className="search__button" onClick={searchBooks}>
