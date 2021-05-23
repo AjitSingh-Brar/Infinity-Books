@@ -6,6 +6,8 @@ Task to develop a Book search Tool, which can accept title as parameter from use
 Making the User capable to sort books alphabetically, by published date, and  even to search from a bunch of categories. For example, Science, Sports, Nature and Food which      were found to be best from recent surveys.
 
 
+Link to the Project: (https://infinitybooks-8b464.web.app/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
