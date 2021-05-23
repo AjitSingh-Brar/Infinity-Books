@@ -1,6 +1,6 @@
 1. How long did you spend on the coding assignment? 
 
-Ans)  The coding assignment took a total of 2 days to complete. The coding assignment phase was dividing into two phases:
+Ans)    The coding assignment took a total of 2 days to complete. The coding assignment phase was dividing into two phases:
            
   Phase I: Understood the User Stories to implement all the needs for user to get the books and the book info. Developed a Flow diagram(Swimlane) to distinguishes the task who is responsible for each part of a process. This allowed me to have an overview of the interaction between front end and back end. 
   What more is, I collected all the business requirements for Home Page, and SearchList Page. Finally, depending on the technical requirements of the application, the required resources from the given documentation and my research was prepared, and designing of the front-end  for the application was done. 
@@ -15,14 +15,20 @@ Ans)  The coding assignment took a total of 2 days to complete. The coding assig
    
 2. What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
 
-Ans) The most useful feature that was added to the latest version for better user experience: 
+Ans)   The most useful feature that was added to the latest version for better user experience: 
     A section for categories was added on the Homepage. Mostly, user finds it easy to search from a bunch of categories. For example, Science, Sports, Nature and Food which were found to be best from recent surveys. Hence, this way of engagement for searching books can be interesting and fun for user. 
                    
 Snippet code:  
+
+
 const URL = "https://openlibrary.org/search.json";
 
   const bookbyCategory = (category) => {
+  
+  
     const FINAL_URL = `${URL}?q=${category}`; // fetches the books data depending on the what user have chosen, when the onClick event triggers.
+    
+    
     console.log(FINAL_URL);
     fetch(FINAL_URL)
       .then((response) => {
@@ -41,7 +47,7 @@ const URL = "https://openlibrary.org/search.json";
  3. How would you track down a performance issue in production? Have you ever had to do this?
 
 
- Ans) To track down a performance in production, I tested the application with minifies production build. Observation was done carefully with the use of React Developer Tools.
+ Ans)   To track down a performance in production, I tested the application with minifies production build. Observation was done carefully with the use of React Developer Tools.
        Mostly, for state management globally among components the Redux Dev tools for Chrome was used to observe the changes of (bookList) which was getting changed in the slice. 
        Usually when an action was dispatched to update the list, it was important to realize how does it changes after certain actions was dispatched. This was done to solve an errors if anything exists. 
    
@@ -49,7 +55,7 @@ const URL = "https://openlibrary.org/search.json";
 
 4. How would you improve the API that you just used?
 
-Ans) For normal development, the API was able to access by the application. In the production environment, the error of “Fixing mixed content” appeared from which the active mixed content was blocked. 
+Ans)   For normal development, the API was able to access by the application. In the production environment, the error of “Fixing mixed content” appeared from which the active mixed content was blocked. 
 Hence for improvements the resource request was changed from http:// to https:// for json data extraction. To improve clarity and simplify the experience, I can  merge the URLs and APIs that will continue to work as expected without change. 
 For handling errors gracefully, we could return HTTP response codes to allow maintainers of the API enough to understand the problem that is occurred. 
 Filtering and pagination can also be used to both increase performance by reducing the usage of server resources. As more data accumulates in the database, the more important these features become.
@@ -58,14 +64,18 @@ Filtering and pagination can also be used to both increase performance by reduci
 
 5. Please describe yourself using correctly formatted JSON.
 
-Ans) From my perspective, a base url :(const URL = "https://openlibrary.org/search.json";) was used.
+Ans)   From my perspective, a base url :(const URL = "https://openlibrary.org/search.json";) was used.
 Then with the use of string literals, title as a query parameter was used. This allowed to fetch the result of the book clearly. 
 For example,  Followed by (const FINAL_URL = `${URL}?q=${title}`;) this url was implemented to fetch the json data.
 
 Then once the response.json() was received, them the necessary data as a parameter was used to fecth the docs to get the list of books. 
 
 snippet code: 
+
+
 const searchBooks = () => {
+
+
     fetch(FINAL_URL)
       .then((response) => {
         return response.json();
@@ -75,6 +85,8 @@ const searchBooks = () => {
       });
 
     history.push("/searchlist");
+    
+    
   };
   
 
