@@ -11,6 +11,7 @@ const Trending = () => {
 
   const bookbyCategory = (category) => {
     const FINAL_URL = `${URL}?q=${category}`;
+    console.log(FINAL_URL);
     fetch(FINAL_URL)
       .then((response) => {
         return response.json();

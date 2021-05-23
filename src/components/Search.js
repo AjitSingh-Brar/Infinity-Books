@@ -11,6 +11,7 @@ const Search = () => {
   const dispatch = useDispatch();
   const URL = "https://openlibrary.org/search.json";
   const FINAL_URL = `${URL}?q=${bookTitle}`;
+  console.log(FINAL_URL);
 
   const searchBooks = () => {
     fetch(FINAL_URL)
