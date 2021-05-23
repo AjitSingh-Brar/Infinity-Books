@@ -1,3 +1,11 @@
+## Challenge
+
+Task to develop a Book search Tool, which can accept title as parameter from user. Application should return a list of books and each book with an info in terms of Title, Book Cover, Author, Published Date. 
+
+
+Making the User capable to sort books alphabetically, by published date, and  even to search from a bunch of categories. For example, Science, Sports, Nature and Food which      were found to be best from recent surveys.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
