@@ -3,7 +3,7 @@
 Ans)  The coding assignment took a total of 2 days to complete. The coding assignment phase was dividing into two phases:
            
   Phase I: Understood the User Stories to implement all the needs for user to get the books and the book info. Developed a Flow diagram(Swimlane) to distinguishes the task who is responsible for each part of a process. This allowed me to have an overview of the interaction between front end and back end. 
-  What more is, I collected all the business requirements for Home Page, and SearchList Page. Finally, depending on the technical requirements of the application, the required resources from the given documentation and my resource was prepared, and designing of the front-end  for the application was done. 
+  What more is, I collected all the business requirements for Home Page, and SearchList Page. Finally, depending on the technical requirements of the application, the required resources from the given documentation and my research was prepared, and designing of the front-end  for the application was done. 
 
   Phase II: To begin with, I started implementing the front-end design of the website with the help of functional components. React Router was used to allow navigation between the pages. 
   Redux as state management was used to store the list of books when any searches for books. As Redux acted as the data layer around the app which made the list to be globally available for any component. Moreover, the list of books was displayed with the functionality of sorting alphabetically and by published date.
