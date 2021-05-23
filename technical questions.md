@@ -21,14 +21,11 @@ Ans)   The most useful feature that was added to the latest version for better u
 Snippet code:  
 
 
-const URL = "https://openlibrary.org/search.json";
 
+const URL = "https://openlibrary.org/search.json";
   const bookbyCategory = (category) => {
-  
-  
-    const FINAL_URL = `${URL}?q=${category}`; // fetches the books data depending on the what user have chosen, when the onClick event triggers.
-    
-    
+  const FINAL_URL = `${URL}?q=${category}`; // fetches the books data depending on the what user have chosen, when the onClick event triggers.
+     
     console.log(FINAL_URL);
     fetch(FINAL_URL)
       .then((response) => {
