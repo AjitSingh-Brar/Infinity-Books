@@ -7,7 +7,7 @@ const Header = () => {
     <div className="header">
       <div className="header__nav">
         <div className="header__left">
-          <a>
+          <a href="/">
             <img src="./images/booksLogo.png" alt="home_logo" />
           </a>
         </div>
@@ -27,6 +27,11 @@ const Header = () => {
         </a>
         <a className="header__login">
           <span>Login</span>
+        </a>
+        <a className="header__menu">
+          <span>
+            <MenuIcon />
+          </span>
         </a>
       </div>
     </div>

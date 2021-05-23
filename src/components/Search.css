@@ -69,8 +69,6 @@
   color: white;
   padding: 2px 16px;
   background-color: #4c4f53;
-  cursor: pointer;
-  z-index: -1;
 }
 
 .search__imageBackground > img {
@@ -78,7 +76,7 @@
   height: 250px;
 }
 
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 1268px) {
   .search {
     color: black;
     width: 100vw;
@@ -95,6 +93,7 @@
   }
   .search__section > span {
     font-size: 25px;
+    padding: 10px;
   }
   .search__imageBackground > img {
     width: 100vw;

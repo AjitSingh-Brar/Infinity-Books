@@ -136,6 +136,9 @@
   color: #323334;
   border-color: transparent;
 }
+.header__menu {
+  visibility: hidden;
+}
 
 @media screen and (max-width: 768px) {
   .header__right {
@@ -146,5 +149,11 @@
   }
   .header__login {
     display: none;
+  }
+  .header__menu {
+    visibility: visible;
+  }
+  .header__menu > span > .MuiSvgIcon-root {
+    font-size: 30px;
   }
 }
