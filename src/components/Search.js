@@ -9,7 +9,7 @@ const Search = () => {
   const history = useHistory();
 
   const dispatch = useDispatch();
-  const URL = "http://openlibrary.org/search.json";
+  const URL = "https://openlibrary.org/search.json";
   const FINAL_URL = `${URL}?q=${bookTitle}`;
 
   const searchBooks = () => {

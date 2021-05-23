@@ -24,7 +24,7 @@ function App() {
                 <Book
                   key={book.key}
                   bookTitle={book.title}
-                  bookCover={`http://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`}
+                  bookCover={`https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`}
                   authorName={book.author_name}
                   publishedDate={
                     book.publish_date ? book.publish_date[0] : " N/A"
@@ -50,7 +50,7 @@ function App() {
                 <Book
                   key={book.key}
                   bookTitle={book.title}
-                  bookCover={`http://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`}
+                  bookCover={`https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`}
                   authorName={book.author_name}
                   publishedDate={
                     book.publish_date ? book.publish_date[0] : " N/A"

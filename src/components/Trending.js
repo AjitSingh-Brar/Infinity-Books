@@ -7,7 +7,7 @@ import "./Trending.css";
 const Trending = () => {
   const dispatch = useDispatch();
   const history = useHistory();
-  const URL = "http://openlibrary.org/search.json";
+  const URL = "https://openlibrary.org/search.json";
 
   const bookbyCategory = (category) => {
     const FINAL_URL = `${URL}?q=${category}`;
